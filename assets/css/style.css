@@ -18,6 +18,8 @@
   --darkModeBrightBlue: #00adff;
   --darkModeTeal: #99e8d6;
   --darkModeLightYellow: #ffffcf;
+  --card-height: auto;
+  --card-width: calc(var(--card-height) / 1.5);
 }
 
 /*--------------------------------------------------------------
@@ -610,8 +612,9 @@ section {
 }
 
 #services .service-title {
-  margin-left: 80px;
-  font-weight: 700;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 500;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -621,7 +624,7 @@ section {
 }
 
 #services .service-description {
-  margin-left: 80px;
+  margin-left: 10px;
   line-height: 24px;
 }
 
@@ -1016,13 +1019,13 @@ section {
   background-color: var(--darkModeBrightBlue);
 }
 
-#contact .php-email-form button[type="submit"] {
+/* #contact .php-email-form button[type="submit"] {
   background: var(--darkModeBrightBlue);
   border: 0;
   padding: 10px 24px;
   color: var(--darkModeBlack);
   transition: 0.4s;
-}
+}*/
 
 #contact .php-email-form button[type="submit"]:hover {
   background: var(--darkModeBlue);
@@ -1479,4 +1482,108 @@ section {
   100% {
     clip: rect(22px, 9999px, 83px, 0);
   }
+}
+
+/*------------------------------------------------------------
+  Card:
+------------------------------------------------------------*/
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+.card {
+  background: var(--darkModeDarkGray);
+  height: 100%;
+  padding: 10px;
+  position: relative;
+  border-radius: 6px;
+  align-items: center;
+  color: var(--lightgray);
+  cursor: pointer;
+}
+
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate),
+    var(--darkModeBrightBlue),
+    #3c67e3 43%,
+    var(--darkModeBlue)
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate),
+    var(--darkModeBrightBlue),
+    #3c67e3 43%,
+    var(--darkModeBlue)
+  );
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+/*------------------------------------------------------------
+  3D Button:
+------------------------------------------------------------*/
+
+.button-3d {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  border: solid 2px var(--darkModeDarkGray);
+  background: var(--darkModeBrightBlue);
+  text-align: center;
+  padding: 16px 18px 14px;
+  margin: 12px;
+
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+
+  -webkit-box-shadow: 0px 6px 0px var(--darkModeBlue);
+  -moz-box-shadow: 0px 6px 0px var(--darkModeBlue);
+  box-shadow: 0px 6px 0px var(--darkModeBlue);
+}
+
+.button-3d:active {
+  -webkit-box-shadow: 0px 2px 0px var(--darkModeBlue);
+  -moz-box-shadow: 0px 2px 0px var(--darkModeBlue);
+  box-shadow: 0px 2px 0px var(--darkModeBlue);
+  position: relative;
+  top: 4px;
 }
