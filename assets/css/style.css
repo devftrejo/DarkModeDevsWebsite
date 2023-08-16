@@ -33,7 +33,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--darkModeBrightBlue);
+  color: var(--lightgray);
   transition: 0.5s;
 }
 
@@ -275,7 +275,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -385,7 +385,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: var(--darkModeBrightBlue);
@@ -575,7 +575,7 @@ section {
 /* Services Section
 --------------------------------*/
 #services {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(70, 70, 70, 0.9));
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(12, 12, 12, 0.9));
   background-size: cover;
   padding: 80px 0 60px 0;
 }
@@ -616,10 +616,9 @@ section {
   margin-left: 10px;
   font-weight: 500;
   margin-bottom: 15px;
-  text-transform: uppercase;
 }
 
-#services .service-title a {
+#services .service-title {
   color: var(--darkModeBrightBlue);
 }
 
@@ -945,9 +944,8 @@ section {
 /* Contact Section
 --------------------------------*/
 #contact {
-  /* background: url(../img/triangles.png) top center;
-  background-size: auto; */
-  background: var(--darkModeBlack);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(12, 12, 12, 0.9));
+  background-size: cover;
   padding: 70px 0 70px 0;
 }
 
@@ -967,7 +965,20 @@ section {
   line-height: 24px;
 }
 
-#contact .php-email-form .error-message {
+#contact .social i {
+  color: var(--darkModeBrightBlue);
+}
+
+#contact .social i:hover {
+  color: var(--darkModeBlue);
+}
+
+#contact .social i {
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+#contact .email-form .error-message {
   display: none;
   color: var(--darkModeGray);
   background: var(--red);
@@ -976,11 +987,11 @@ section {
   font-weight: 600;
 }
 
-#contact .php-email-form .error-message br + br {
+#contact .email-form .error-message br + br {
   margin-top: 25px;
 }
 
-#contact .php-email-form .sent-message {
+#contact .email-form .sent-message {
   display: none;
   color: var(--white);
   background: var(--darkModeLightYellow);
@@ -989,14 +1000,14 @@ section {
   font-weight: 600;
 }
 
-#contact .php-email-form .loading {
+#contact .email-form .loading {
   display: none;
   background: var(--white);
   text-align: center;
   padding: 15px;
 }
 
-#contact .php-email-form .loading:before {
+#contact .email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1008,26 +1019,18 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-#contact .php-email-form input,
-#contact .php-email-form textarea {
+#contact .email-form input,
+#contact .email-form textarea {
   border-radius: 0;
   box-shadow: none;
 }
 
-#contact .php-email-form input::focus,
-#contact .php-email-form textarea::focus {
+#contact .email-form input::focus,
+#contact .email-form textarea::focus {
   background-color: var(--darkModeBrightBlue);
 }
 
-/* #contact .php-email-form button[type="submit"] {
-  background: var(--darkModeBrightBlue);
-  border: 0;
-  padding: 10px 24px;
-  color: var(--darkModeBlack);
-  transition: 0.4s;
-}*/
-
-#contact .php-email-form button[type="submit"]:hover {
+#contact .email-form button[type="submit"]:hover {
   background: var(--darkModeBlue);
 }
 
@@ -1038,52 +1041,6 @@ section {
 
   100% {
     transform: rotate(360deg);
-  }
-}
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 30px 0;
-}
-
-.breadcrumbs h2 {
-  font-size: 26px;
-  font-weight: 300;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 15px;
-}
-
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: var(--darkModeGray);
-  content: "/";
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
   }
 }
 
@@ -1103,13 +1060,6 @@ section {
 #footer .copyright {
   text-align: center;
 }
-
-/* #footer .credits {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 13px;
-  color: #ccc;
-} */
 
 /*------------------------------------------------------------
   Glitch:
