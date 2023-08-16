@@ -167,9 +167,9 @@ h6 {
 }
 
 #hero h2 span {
-  color: var(--darkModeBlue);
+  color: var(--darkModeBrightBlue);
   transition: 0.3s;
-  border-bottom: 2px solid var(--darkModeBrightBlue);
+  border-bottom: 2px solid var(--darkModeBlue);
 }
 
 @media (max-width: 768px) {
@@ -500,7 +500,7 @@ section {
 
 .section-title {
   font-size: 32px;
-  color: var(--darkModeBlue);
+  color: var(--darkModeBrightBlue);
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -515,7 +515,7 @@ section {
 .section-title-divider {
   width: 300px;
   height: 3px;
-  background: var(--darkModeBrightBlue);
+  background: var(--darkModeBlue);
   margin: 0 auto;
   margin-bottom: 20px;
 }
