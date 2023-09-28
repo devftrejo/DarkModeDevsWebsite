@@ -264,4 +264,10 @@
   window.addEventListener("load", () => {
     aos_init();
   });
+
+  const switchTheme = document.querySelector("#switch");
+
+  switchTheme.addEventListener("click", function () {
+    document.body.classList.toggle("light-mode");
+  });
 })();

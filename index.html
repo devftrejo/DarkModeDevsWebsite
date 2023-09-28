@@ -17,20 +17,6 @@
       content="DevFTrejo, Fernando Trejo, NaNTheProgrammer, app building, app dev, app developers, app development, app development company, application development, application development and maintenance, application development backend, application development companies, application saas, artificial intelligence, artificial intelligence integration, backend developer, build an app, build mobile app, contact saas, creating a mobile app, creating website, custom application development services, custom mobile app development, darkmode, darkmode devs, desktop application development, freelance web designer, freelance web developer, front end developer, front end web developer, front end web development, fullstack web developer, mobile app development, mobile app development company, mobile application development, mobile development, saas, saas application, saas applications, saas business, saas company, saas deployment, saas design, saas development, saas management, saas management platform, saas platform, saas platform development, saas security, saas software, saas solutions, software as a service, web application development, web design, web design company, web dev, web development, web development agencies, web development and design, web development applications, web development apps, web development business, web development company, web development design, website developers, website development, website development company"
     />
 
-    <!-- Facebook Opengraph Integration: https://developers.facebook.com/docs/sharing/opengraph -->
-    <!-- <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" /> -->
-
-    <!-- Twitter Cards Integration: https://dev.twitter.com/cards/  -->
-    <!-- <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:description" content="" />
-    <meta name="twitter:image" content="" /> -->
-
     <!-- Favicons -->
 
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
@@ -113,6 +99,24 @@
             <!-- End Glitch Text -->
             <a href="#services" class="btn-services">Our Services</a>
           </div>
+          <!-- Toggle Light Mode Switch -->
+          <div class="switch">
+            <input type="checkbox" id="switch" />
+            <label for="switch">
+              <img
+                class="sun"
+                src="assets/img/icons8-summer-48.png"
+                alt="Sun Icon"
+              />
+              <img
+                class="moon"
+                src="assets/img/icons8-full-moon-48.png"
+                alt="Moon Icon"
+              />
+              <span class="ball"></span>
+            </label>
+          </div>
+          <!-- End Toggle Light Mode Switch -->
         </div>
       </div>
     </section>
@@ -128,10 +132,7 @@
             src="assets/img/logo-color-v-500px.png"
             alt="DarkMode() Devs Logo"
         /></a>
-
-        <!-- Uncomment for text logo -->
-        <!-- <h1 class="logo mr-auto"><a href="index.html">DarkMode() Devs</a></h1> -->
-
+        <!-- Navbar -->
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -144,36 +145,11 @@
               <a class="nav-link scrollto" href="#testimonials">Testimonials</a>
             </li> -->
             <li><a class="nav-link scrollto" href="#team">Team</a></li>
-            <!-- <li class="dropdown">
-              <a href="#"
-                ><span>Drop Down</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="dropdown">
-                  <a href="#"
-                    ><span>Deep Drop Down</span>
-                    <i class="bi bi-chevron-right"></i
-                  ></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-              </ul>
-            </li> -->
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
-
-        <!-- .navbar -->
+        <!-- End Navbar -->
       </div>
     </header>
 
@@ -186,7 +162,7 @@
         <div class="container" data-aos="fade-up">
           <div class="row">
             <div class="col-md-12">
-              <h3 class="section-title">About DarkMode() Devs</h3>
+              <h3 class="section-title">About ${DarkMode} Devs</h3>
               <div class="section-title-divider"></div>
 
               <!-- Glitch Text -->
@@ -468,25 +444,6 @@
         </div>
       </section>
       <!-- End Services Section -->
-
-      <!-- ======= Subscrbe Section ======= -->
-      <!-- <section id="subscribe">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div class="col-md-8">
-              <h3 class="subscribe-title">Subscribe For Updates</h3>
-              <p class="subscribe-text">
-                Join our 1000+ subscribers and get access to the latest tools,
-                freebies, product announcements and much more!
-              </p>
-            </div>
-            <div class="col-md-4 subscribe-btn-container">
-              <a class="subscribe-btn" href="#">Subscribe Now</a>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- End Subscrbe Section -->
 
       <!-- ======= Portfolio Section ======= -->
       <!-- <section id="portfolio">
@@ -1001,7 +958,7 @@
                 </form>
               </div>
             </div>
-            <!-- Google Calendar Appointment Scheduling begin -->
+            <!-- Google Calendar Appointment Scheduling Begin -->
             <iframe
               src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1HRcyJMt38ZnNxNnUeMigO5aZH9dsZ2LGg27nzydLQLcBA0lmPnqdfKsmRqiCUWq6pP_phikmQ?gv=true"
               style="border: 0"
@@ -1009,7 +966,7 @@
               height="600"
               frameborder="0"
             ></iframe>
-            <!-- end Google Calendar Appointment Scheduling -->
+            <!-- End Google Calendar Appointment Scheduling -->
           </div>
         </div>
       </section>
@@ -1025,6 +982,10 @@
             <div class="copyright">
               &copy; Copyright 2023 <span>${DarkMode} Devs</span> All Rights
               Reserved.
+            </div>
+            <div class="copyright">
+              Sun & Moon Icons by
+              <a target="_blank" href="https://icons8.com">Icons8</a>
             </div>
           </div>
         </div>
