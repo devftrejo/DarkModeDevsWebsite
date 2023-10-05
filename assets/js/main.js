@@ -265,6 +265,9 @@
     aos_init();
   });
 
+  /**
+   * Light Mode Toggle:
+   */
   const switchTheme = document.querySelector("#switch");
 
   switchTheme.addEventListener("click", function () {
