@@ -654,8 +654,9 @@ section {
 
 /* Project Section
 --------------------------------*/
+
 #project {
-  background: url(../img/dark_mosaic.png) top center;
+  background: var(--urlImgOne);
   background-size: auto;
   padding: 80px 0;
 }
@@ -737,6 +738,111 @@ section {
 
 #project .project-item:hover .project-info {
   opacity: 1;
+}
+
+/* Mentorship Section
+--------------------------------*/
+
+#mentorship {
+  background: linear-gradient(
+    rgba(var(--darkModeSecondary)),
+    rgba(var(--darkModePrimary)),
+    rgba(var(--darkModeSecondary))
+  );
+  background-size: cover;
+  padding: 80px 0 60px 0;
+}
+
+#mentorship .mentorship-img {
+  overflow: hidden;
+}
+
+#mentorship .mentorship-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+#mentorship .mentorship-img #mentorship-img-one {
+  margin-top: 7px;
+}
+
+@media (max-width: 768px) {
+  #mentorship .mentorship-img {
+    height: auto;
+  }
+
+  #mentorship .mentorship-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+#mentorship .mentorship-text {
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+#mentorship .mentorship-text:last-child {
+  margin-bottom: 0;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+#video-border {
+  border: 3px solid var(--darkModeDarkGray);
+  border-style: inset;
+}
+
+#mentorship-list {
+  list-style: none;
+}
+#mentorship-list .mentorship-item::before {
+  content: "";
+  background-image: url("../img/DMDLogo.png");
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.1rem;
+  margin-right: 0.2rem;
+}
+
+.ul-header-text {
+  font-family: var(--font-family-one);
+  color: var(--darkModeBrightBlue);
+}
+
+.actions a {
+  font-family: var(--font-family-two);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+#center-pay-btn {
+  text-align: center;
+}
+
+.btn-pay {
+  background: var(--darkModeBlue);
+  border: 2px solid var(--darkModeBrightBlue);
+  color: var(--white);
+}
+
+.btn-pay:hover {
+  background: none;
+  border: 2px solid var(--white);
+  color: var(--white);
 }
 
 /* Testimonials Section
@@ -955,6 +1061,10 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+#calendar-container {
+  margin-top: 30px;
 }
 
 /*--------------------------------------------------------------
