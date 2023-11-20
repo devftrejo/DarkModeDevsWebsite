@@ -9,7 +9,6 @@
   --white: white;
   --yellow: yellow;
   --lightgray: lightgray;
-  --red: red;
   --dark: #040303;
   --shade-one: #121212;
   --darkModeGray: #3c3c49;
@@ -565,6 +564,8 @@ section {
 
 #about .about-img #about-img-one {
   margin-top: 7px;
+  border: 4px solid var(--darkModeDarkGray);
+  border-style: inset;
 }
 
 @media (max-width: 768px) {
@@ -740,6 +741,11 @@ section {
   opacity: 1;
 }
 
+.project-img {
+  border: 4px solid var(--darkModeDarkGray);
+  border-style: inset;
+}
+
 /* Mentorship Section
 --------------------------------*/
 
@@ -792,7 +798,7 @@ video {
 }
 
 #video-border {
-  border: 3px solid var(--darkModeDarkGray);
+  border: 4px solid var(--darkModeDarkGray);
   border-style: inset;
 }
 
@@ -801,7 +807,7 @@ video {
 }
 #mentorship-list .mentorship-item::before {
   content: "";
-  background-image: url("../img/DMDLogo.png");
+  background-image: url("../img/DMDLogoTransparent.png");
   background-size: contain;
   display: inline-block;
   width: 1em;
@@ -816,33 +822,15 @@ video {
   color: var(--darkModeBrightBlue);
 }
 
-.actions a {
-  font-family: var(--font-family-two);
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 20px;
-  border-radius: 2px;
-  transition: 0.5s;
-  margin: 10px;
+#paypal-container {
+  border: 4px solid var(--darkModeDarkGray);
+  border-style: inset;
+  background: url("../img/honey_im_subtle.png");
+  background-size: auto;
 }
 
-#center-pay-btn {
-  text-align: center;
-}
-
-.btn-pay {
-  background: var(--darkModeBlue);
-  border: 2px solid var(--darkModeBrightBlue);
-  color: var(--white);
-}
-
-.btn-pay:hover {
-  background: none;
-  border: 2px solid var(--white);
-  color: var(--white);
+#paypal-button-container {
+  margin-top: 15px;
 }
 
 /* Testimonials Section
@@ -956,6 +944,11 @@ video {
   margin: 0 2px;
 }
 
+.pic {
+  border: 4px solid var(--darkModeDarkGray);
+  border-style: inset;
+}
+
 /* Contact Section
 --------------------------------*/
 #contact {
@@ -997,47 +990,6 @@ video {
   margin: 0 10px;
 }
 
-#contact .email-form .error-message {
-  display: none;
-  color: var(--darkModeGray);
-  background: var(--red);
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#contact .email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-#contact .email-form .sent-message {
-  display: none;
-  color: var(--white);
-  background: var(--darkModeLightYellow);
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#contact .email-form .loading {
-  display: none;
-  background: var(--white);
-  text-align: center;
-  padding: 15px;
-}
-
-#contact .email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--darkModeTeal);
-  border-top-color: var(--white);
-  animation: animate-loading 1s linear infinite;
-}
-
 #contact .email-form input,
 #contact .email-form textarea {
   border-radius: 0;
@@ -1049,22 +1001,43 @@ video {
   background-color: var(--darkModeBrightBlue);
 }
 
-#contact .email-form button[type="submit"]:hover {
-  background: var(--darkModeBlue);
+.form-control {
+  border: 4px solid var(--darkModeDarkGray);
+  border-style: inset;
 }
 
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
+#contact .email-form .actions button[type="submit"] {
+  font-family: var(--font-family-two);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  background: var(--darkModeBlue);
+  border: 2px solid var(--darkModeBrightBlue);
+  color: var(--white);
+}
 
-  100% {
-    transform: rotate(360deg);
-  }
+#contact .email-form .actions button[type="submit"]:hover {
+  background: none;
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+#center-send-btn {
+  text-align: center;
+  margin-top: 10px;
 }
 
 #calendar-container {
   margin-top: 30px;
+  padding: 10px;
+  border: 4px solid var(--darkModeDarkGray);
+  border-style: inset;
 }
 
 /*--------------------------------------------------------------
@@ -1526,37 +1499,4 @@ video {
   100% {
     --rotate: 360deg;
   }
-}
-
-/*------------------------------------------------------------
-  3D Button:
-------------------------------------------------------------*/
-
-.button-3d {
-  position: relative;
-  width: auto;
-  display: inline-block;
-  text-decoration: none;
-  border-radius: 5px;
-  border: solid 2px var(--darkModeDarkGray);
-  background: var(--darkModeBrightBlue);
-  text-align: center;
-  padding: 16px 18px 14px;
-  margin: 12px;
-
-  -webkit-transition: all 0.1s;
-  -moz-transition: all 0.1s;
-  transition: all 0.1s;
-
-  -webkit-box-shadow: 0px 6px 0px var(--darkModeBlue);
-  -moz-box-shadow: 0px 6px 0px var(--darkModeBlue);
-  box-shadow: 0px 6px 0px var(--darkModeBlue);
-}
-
-.button-3d:active {
-  -webkit-box-shadow: 0px 2px 0px var(--darkModeBlue);
-  -moz-box-shadow: 0px 2px 0px var(--darkModeBlue);
-  box-shadow: 0px 2px 0px var(--darkModeBlue);
-  position: relative;
-  top: 4px;
 }

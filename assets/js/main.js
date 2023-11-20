@@ -267,7 +267,7 @@
           purchase_units: [
             {
               amount: {
-                value: "100.00",
+                value: "200.00",
               },
             },
           ],

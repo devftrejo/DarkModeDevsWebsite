@@ -190,7 +190,7 @@
         >
           <div class="row">
             <div class="col-lg-6 about-img">
-              <div>
+              <div class="container">
                 <img
                   id="about-img-one"
                   src="assets/img/eatSleepCodeRepeat.jpg"
@@ -203,41 +203,23 @@
                 We don't just think mobile first, we think Dark first.
               </h2>
               <p class="about-text">
-                At DarkMode Devs, we are passionate about web development and
-                helping businesses thrive online. We are skilled and committed
-                to delivering top-notch solutions that exceed our clients'
-                expectations.
+                At DarkMode Devs, we are passionate about web development, and
+                dedicated to exceeding client expectations with top-notch
+                solutions. By understanding your business, industry, and
+                audience, we create tailored web solutions.
               </p>
               <p class="about-text">
-                We take the time to understand your business, industry, and
-                target audience, so that we can create customized web solutions
-                that resonate with your customers.
+                We stay current with trends and technologies, delivering
+                innovative digital experiences. Our company values transparency,
+                communication, and collaboration throughout the entire process,
+                from initial consultations to ongoing maintenance.
               </p>
               <p class="about-text">
-                We are dedicated to staying up to date with the latest trends
-                and technologies. This allows us to deliver innovative and
-                cutting-edge digital experiences.
-              </p>
-              <p class="about-text">
-                Transparency, communication, and collaboration are the pillars
-                of our company. From initial consultations and wireframe
-                creation to design iterations, development, and ongoing
-                maintenance, we keep you involved and informed every step of the
-                way.
-              </p>
-              <p class="about-text">
-                Quality is paramount. We meticulously craft each project to
-                ensure flawless functionality, stunning aesthetics, and seamless
-                user experiences. Our attention to detail and commitment to
-                excellence shine through in every line of code, every pixel, and
-                every interaction, resulting in digital solutions that leave a
-                lasting impression.
-              </p>
-              <p class="about-text">
-                Startup, growing business, or enterprise – we have the expertise
-                and the passion to bring your digital vision to life. Partner
-                with us to unlock the full potential of your online presence and
-                achieve online success.
+                Quality is our priority. Each project undergoes meticulous
+                crafting for flawless functionality, stunning aesthetics, and
+                seamless user experiences. Whether you're a startup, growing
+                business, or enterprise, partner with us to bring your digital
+                vision to life and achieve online success.
               </p>
             </div>
           </div>
@@ -489,7 +471,7 @@
             <div class="col-lg-4 col-md-6 project-item filter-web">
               <img
                 src="assets/img/portfolio/DevFTrejo.png"
-                class="img-fluid"
+                class="project-img img-fluid"
                 alt="Founder & CEOs Portfolio Website"
               />
               <div class="project-info">
@@ -508,7 +490,7 @@
             <div class="col-lg-4 col-md-6 project-item filter-web">
               <img
                 src="assets/img/portfolio/azur.png"
-                class="img-fluid"
+                class="project-img img-fluid"
                 alt="Azur Agency Website"
               />
               <div class="project-info">
@@ -527,7 +509,7 @@
             <div class="col-lg-4 col-md-6 project-item filter-web">
               <img
                 src="assets/img/portfolio/CBMC.png"
-                class="img-fluid"
+                class="project-img img-fluid"
                 alt="CBMC AZ Website"
               />
               <div class="project-info">
@@ -633,21 +615,7 @@
                   payment.
                 </li>
               </ul>
-              <div class="container">
-                <!-- <div class="actions" id="center-pay-btn"> -->
-                <!-- Glitch Text -->
-                <!-- <a
-                    href="https://paypal.me/DarkModeDevsLLC?country.x=US&locale.x=en_US"
-                    target="_blank"
-                    class="btn-pay"
-                    ><span class="glitch-wrapper"
-                      ><div class="glitch" data-text="PAY VIA PAYPAL">
-                        pay via paypal
-                      </div>
-                    </span></a
-                  > -->
-                <!-- End Glitch Text -->
-                <!-- </div> -->
+              <div class="container" id="paypal-container">
                 <div id="paypal-button-container"></div>
                 <div data-pp-message data-pp-amount="200.00"></div>
               </div>
@@ -903,23 +871,21 @@
                       required
                     ></textarea>
                   </div>
-                  <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
-                      Your message has been sent. Thank you!
+                  <div class="container" id="center-send-btn">
+                    <div class="actions">
+                      <!-- Glitch Text -->
+                      <button class="btn-send" type="submit">
+                        <span class="glitch-wrapper"
+                          ><div class="glitch" data-text="SEND">send</div>
+                        </span>
+                      </button>
+                      <!-- End Glitch Text -->
                     </div>
-                  </div>
-                  <div class="text-center">
-                    <button class="button-3d" type="submit">Send</button>
                   </div>
                 </form>
               </div>
             </div>
-            <div
-              class="container border border-2 rounded border-dark"
-              id="calendar-container"
-            >
+            <div class="container" id="calendar-container">
               <!-- Google Calendar Appointment Scheduling Begin -->
               <iframe
                 src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1HRcyJMt38ZnNxNnUeMigO5aZH9dsZ2LGg27nzydLQLcBA0lmPnqdfKsmRqiCUWq6pP_phikmQ?gv=true"
