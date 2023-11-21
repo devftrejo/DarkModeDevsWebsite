@@ -131,7 +131,7 @@ h6 {
   --darkModeBlackRGBA: rgba(211, 211, 211, 0.9);
   --white: #000000;
   --black: white;
-  --darkModePrimary: 169, 169, 169, 0.9;
+  --darkModePrimary: 179, 179, 179, 0.9;
   --darkModeSecondary: 255, 255, 255, 0.9;
   --darkModeGray: white;
   --cardDarkModeDarkGray: lightgray;
@@ -575,7 +575,13 @@ section {
 
   #about .about-img img {
     margin-left: 0;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  #about .about-content {
+    margin-left: 10px;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -773,13 +779,19 @@ section {
 }
 
 @media (max-width: 768px) {
-  #mentorship .mentorship-img {
+  #mentorship .ladybot-video-container {
     height: auto;
+    text-align: center;
   }
 
-  #mentorship .mentorship-img img {
+  #mentorship .ladybot-video-container video {
     margin-left: 0;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  #mentorship .mentorship-content {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -1038,6 +1050,23 @@ video {
   padding: 10px;
   border: 4px solid var(--darkModeDarkGray);
   border-style: inset;
+}
+
+@media (max-width: 768px) {
+  #contact #email-p {
+    word-wrap: break-word;
+  }
+}
+
+@media (max-width: 425px) {
+  #contact .info-item {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  #contact #info-container {
+    margin-bottom: 30px;
+  }
 }
 
 /*--------------------------------------------------------------
