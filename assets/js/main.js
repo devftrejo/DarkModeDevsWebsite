@@ -254,7 +254,16 @@
   const switchTheme = document.querySelector("#switch");
 
   switchTheme.addEventListener("click", function () {
-    document.body.classList.toggle("light-mode");
+    const body = document.body;
+    body.classList.toggle("light-mode");
+    document.getElementById("switch").innerHTML = "Dark Mode";
+    if (body.classList.contains("dark-mode")) {
+      body.classList.remove("dark-mode");
+      document.getElementById("switch").innerHTML = "Light Mode";
+    } else {
+      body.classList.add("dark-mode");
+      document.getElementById("switch").innerHTML = "Dark Mode";
+    }
   });
 
   /**
