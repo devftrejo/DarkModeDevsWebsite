@@ -265,23 +265,4 @@
       document.getElementById("switch").innerHTML = "Dark Mode";
     }
   });
-
-  /**
-   * PayPal Buttons:
-   */
-  paypal
-    .Buttons({
-      createOrder: function (data, actions) {
-        return actions.order.create({
-          purchase_units: [
-            {
-              amount: {
-                value: "200.00",
-              },
-            },
-          ],
-        });
-      },
-    })
-    .render("#paypal-button-container");
 })();

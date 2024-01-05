@@ -20,7 +20,8 @@
   --darkModeLightYellow: #ffffcf;
   --card-height: auto;
   --card-width: calc(var(--card-height) / 1.5);
-  --urlImgOne: url(../img/triangles.png) top center;
+  --urlImgOne: url("https://drive.google.com/uc?export=view&id=1UusRshf_eLMfJR9byXhe0zKYKjqG2DKu")
+    top center;
   --darkModeBlackRGBA: rgba(0, 0, 0, 0.9);
   --darkModePrimary: 0, 0, 0, 0.9;
   --darkModeSecondary: 12, 12, 12, 0.9;
@@ -83,8 +84,9 @@ h6 {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: var(--darkModeBlack) url("../img/preloader.svg") no-repeat center
-    center;
+  background: var(--darkModeBlack)
+    url("https://drive.google.com/uc?export=view&id=18mhWpS6x8dGin8lOrKE6SXMsJXXhwDSb")
+    no-repeat center center;
 }
 
 /*--------------------------------------------------------------
@@ -125,7 +127,8 @@ h6 {
 --------------------------------------------------------------*/
 
 .light-mode {
-  --urlImgOne: url("../img/hexellence.png") top center;
+  --urlImgOne: url("https://drive.google.com/uc?export=view&id=17OzezLgiizvMHLr0QT52ubpgeOJrGamp")
+    top center;
   --lightgray: #000000;
   --dark: lightgray;
   --darkModeBlackRGBA: rgba(211, 211, 211, 0.9);
@@ -705,17 +708,20 @@ section {
   padding: 80px 0 60px 0;
 }
 
-#mentorship .mentorship-img {
+#mentorship #qr-img-one {
   overflow: hidden;
 }
 
-#mentorship .mentorship-img img {
-  max-width: 100%;
+#qr-img-one {
+  max-width: 50%;
   height: auto;
+  border: 4px solid var(--darkModeDarkGray);
+  border-style: inset;
 }
 
-#mentorship .mentorship-img #mentorship-img-one {
-  margin-top: 7px;
+.qr-container {
+  text-align: center;
+  margin-top: 15px;
 }
 
 @media (max-width: 768px) {
@@ -757,9 +763,10 @@ video {
 #mentorship-list {
   list-style: none;
 }
+
 #mentorship-list .mentorship-item::before {
   content: "";
-  background-image: url("../img/DMDLogoTransparent.png");
+  background-image: url("https://drive.google.com/uc?export=view&id=1N4E2xLJtD1-c8havTnBFiOCw9T39_ubl");
   background-size: contain;
   display: inline-block;
   width: 1em;
@@ -772,17 +779,6 @@ video {
 .ul-header-text {
   font-family: var(--font-family-one);
   color: var(--darkModeBrightBlue);
-}
-
-#paypal-container {
-  border: 4px solid var(--darkModeDarkGray);
-  border-style: inset;
-  background-color: var(--darkModeBlack);
-  background-size: auto;
-}
-
-#paypal-button-container {
-  margin-top: 15px;
 }
 
 /* Team Section
