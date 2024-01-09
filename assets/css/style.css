@@ -20,7 +20,7 @@
   --darkModeLightYellow: #ffffcf;
   --card-height: auto;
   --card-width: calc(var(--card-height) / 1.5);
-  --urlImgOne: url("https://drive.google.com/uc?export=view&id=1UusRshf_eLMfJR9byXhe0zKYKjqG2DKu")
+  --urlImgOne: url("../img/triangles.png")
     top center;
   --darkModeBlackRGBA: rgba(0, 0, 0, 0.9);
   --darkModePrimary: 0, 0, 0, 0.9;
@@ -85,7 +85,7 @@ h6 {
   height: 100%;
   overflow: visible;
   background: var(--darkModeBlack)
-    url("https://drive.google.com/uc?export=view&id=18mhWpS6x8dGin8lOrKE6SXMsJXXhwDSb")
+    url("../img/preloader.svg")
     no-repeat center center;
 }
 
@@ -127,7 +127,7 @@ h6 {
 --------------------------------------------------------------*/
 
 .light-mode {
-  --urlImgOne: url("https://drive.google.com/uc?export=view&id=17OzezLgiizvMHLr0QT52ubpgeOJrGamp")
+  --urlImgOne: url("../img/hexellence.png")
     top center;
   --lightgray: #000000;
   --dark: lightgray;
@@ -766,7 +766,7 @@ video {
 
 #mentorship-list .mentorship-item::before {
   content: "";
-  background-image: url("https://drive.google.com/uc?export=view&id=1N4E2xLJtD1-c8havTnBFiOCw9T39_ubl");
+  background-image: url("../img/DMDLogoTransparent.png");
   background-size: contain;
   display: inline-block;
   width: 1em;
