@@ -234,6 +234,14 @@ h6 {
   background: var(--darkModeBlue);
   border: 2px solid var(--darkModeBrightBlue);
   color: var(--white);
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #hero .btn-get-started:hover {
@@ -245,6 +253,14 @@ h6 {
 #hero .btn-toggle {
   border: 2px solid var(--lightgray);
   color: var(--lightgray);
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  line-height: 30px;
+  text-align: center;
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #hero .btn-toggle:hover {
@@ -800,6 +816,14 @@ video {
   background: var(--darkModeBlue);
   border: 2px solid var(--darkModeBrightBlue);
   color: var(--white);
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #mentorship .btn-payment:hover {
@@ -936,6 +960,12 @@ video {
   background: var(--darkModeBlue);
   border: 2px solid var(--darkModeBrightBlue);
   color: var(--white);
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #contact .email-form .actions button[type="submit"]:hover {
